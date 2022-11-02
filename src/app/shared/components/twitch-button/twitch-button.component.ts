@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-twitch-button',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./twitch-button.component.sass']
 })
 export class TwitchButtonComponent implements OnInit {
+  @Input() name!:string;
+  @Input() link!:string;
+  @Input() profilPicture !:string;
+  @Input() onAir !:boolean;
 
   constructor() { }
 

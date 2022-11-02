@@ -1,1 +1,14 @@
-<p>twitch-button works!</p>
+<div class="twitch-div" [ngClass]="{'onAir' : onAir === true}">
+  <a [href]="link" class="twitch-link">
+    <div class="twitch-button">
+      <div class="twitch-button-content">
+        <div class="twitch-profil-img" [style.background]="'no-repeat center/cover url(http://www.jcousinou.fr/header1920.e1362bfe1225a6f2.png)'">
+        </div>
+        <div class="twitch-name" >
+          <p>{{name}}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="twitch-live">Live</div>
+</div>

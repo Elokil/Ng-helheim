@@ -1,0 +1,51 @@
+@import ../../../../assets/sass/_variables.sass
+.twitch-div
+  position: relative
+  .twitch-link
+    text-decoration: none
+    .twitch-button
+      display: flex
+      text-decoration: none
+      flex-direction: column
+      .twitch-button-content
+        display: flex
+        text-decoration: none
+        flex-direction: row
+        padding: 2px 5px
+        border: solid 2px #787878
+        border-radius: 10px
+        .twitch-profil-img
+          border: 2px solid #787878
+          display: flex
+          width: 50px
+          height: 50px
+          border-radius: 50%
+        .twitch-name
+          color: $white
+          display: flex
+          font-family: 'Mouse Memoirs', sans-serif
+          font-weight: 400
+          font-size: 2.5rem
+  .twitch-live
+    visibility: hidden
+    position: absolute
+    bottom: 4px
+    left: 16px
+    background-color: $rouge
+    color: $white
+    padding: 1px
+    border-radius: 4px
+    z-index: 1
+
+.onAir
+    .twitch-button-content
+      border-color:$twitch!important
+      .twitch-profil-img
+        border-color:$primary!important
+      .twitch-name
+        color: $twitch!important
+    .twitch-live
+      visibility: visible!important
+
+
+  
